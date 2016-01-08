@@ -8,4 +8,11 @@ defmodule PWS.HelloController do
   def index(conn, _params) do
     render conn, "index.html"
   end
+
+  @doc """
+  Render the detail view for the specified `messenger`.
+  """
+  def show(conn, %{"messenger" => messenger}) do
+     render conn, "show.html", messenger: messenger
+  end
 end

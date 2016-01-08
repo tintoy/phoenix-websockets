@@ -2,6 +2,6 @@ defmodule PWS.HelloView do
   use PWS.Web, :view
 
   @moduledoc """
-  Logic for the Hello World view.
+  Logic for Hello World views.
   """
 end
